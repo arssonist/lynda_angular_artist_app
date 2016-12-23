@@ -1,8 +1,8 @@
 var myApp = angular.module('myApp', []);
 
-myApp.controller('MyController', function MyController($scope) {
-  $scope.artists = [
-      {
+myApp.controller('MyController', function MyController($scope) {//controller
+  $scope.artists = [//model
+      {//scope var holds the info that makes it appear on page  
         "name":"Barot Bellingham",
         "shortname":"Barot_Bellingham",
         "reknown":"Royal Academy of Painting and Sculpture",
