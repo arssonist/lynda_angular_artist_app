@@ -19,7 +19,7 @@
       <input type="radio" ng-model="direction" name="direction" value="reverse">
       descending
     </label>
-   
+
   </div>
   <ul class="artistlist">
     <li class="artist cf" ng-repeat="item in artists | filter: query | orderBy: artistOrder:direction">
@@ -29,5 +29,5 @@
         <h3>{{item.reknown}}</h3>
       </div>
     </li>
-  </ul>  
+  </ul>
 </section>

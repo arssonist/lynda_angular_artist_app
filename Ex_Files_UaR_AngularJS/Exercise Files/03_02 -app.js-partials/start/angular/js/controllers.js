@@ -6,3 +6,4 @@ artistControllers.controller('ListController', ['$scope', '$http', function($sco
     $scope.artistOrder = 'name';
   });
 }]);
+
