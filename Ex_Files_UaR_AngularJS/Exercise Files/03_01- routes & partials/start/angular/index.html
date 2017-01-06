@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <title>Angular Demo</title>
   <script src="lib/angular/angular.min.js"></script>
-  <script src="lib/angular/angular-route.min.js"></script>
-
-  <script src="js/app.js"></script>
+  <script src="lib/angular/angular-routes.min.js"></script>
   <script src="js/controllers.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="main" ng-view></div>
+<div class="main" ng-view>
+<!-- Add ng view. remove ng-controller, each view will have it's own controller -->  
+</div>
 </body>
 </html>

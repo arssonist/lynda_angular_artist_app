@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Angular Demo</title>
   <script src="lib/angular/angular.min.js"></script>
+  <script src="lib/angular/angular-routes.min.js"></script>
   <script src="js/controllers.js"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,7 +31,7 @@
       <input type="radio" ng-model="direction" name="direction" value="reverse">
       descending
     </label>
-   
+
   </div>
   <ul class="artistlist">
     <li class="artist cf" ng-repeat="item in artists | filter: query | orderBy: artistOrder:direction">
