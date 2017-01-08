@@ -19,10 +19,10 @@
       <input type="radio" ng-model="direction" name="direction" value="reverse">
       descending
     </label>
-   
+
   </div>
-  <ul class="artistlist">
-    <li class="artist cf" ng-repeat="item in artists | filter: query | orderBy: artistOrder:direction">
+  <ul class="artistlist" ng-show="query">
+    <li ng-animate="animate"  class="artist cf" ng-repeat="item in artists | filter: query | orderBy: artistOrder:direction">
       <a href="#/details/{{artists.indexOf(item)}}">
         <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
         <div class="info">
@@ -31,5 +31,5 @@
         </div>
       </a>
     </li>
-  </ul>  
+  </ul>
 </section>
